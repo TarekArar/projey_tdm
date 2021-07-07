@@ -7,7 +7,25 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.laidi_arar.appQuran.ui.main.SearchFragment"
+        android:name="com.mazrou.boilerplate.ui.main.SearchFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_search" />
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/nav_to_ayat_list"
+            app:destination="@id/ayatListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ayatListFragment"
+        android:name="com.mazrou.boilerplate.ui.main.AyatListFragment"
+        android:label="fragment_ayat_list"
+        tools:layout="@layout/fragment_ayat_list" >
+        <action
+            android:id="@+id/to_ayat_details"
+            app:destination="@id/ayatDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ayatDetailsFragment"
+        android:name="com.mazrou.boilerplate.ui.main.AyatDetailsFragment"
+        android:label="fragment_ayat_details"
+        tools:layout="@layout/fragment_ayat_details" />
 </navigation>

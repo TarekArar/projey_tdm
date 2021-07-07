@@ -12,7 +12,7 @@
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <com.laidi_arar.appQuran.util.input.ClickableDrawableEditText
+        <com.mazrou.boilerplate.util.input.ClickableDrawableEditText
             android:id="@+id/search_input"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
